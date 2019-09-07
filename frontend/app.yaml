@@ -11,6 +11,10 @@ handlers:
   static_files: index.js
   upload: index.js
 
+- url: /firebase.js
+  static_files: firebase.js
+  upload: firebase.js
+
 - url: /normalize.css
   static_files: normalize.css
   upload: normalize.css

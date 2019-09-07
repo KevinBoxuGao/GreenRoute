@@ -1,0 +1,5 @@
+.idea
+lib
+venv
+.vscode
+frontend/firebase.js

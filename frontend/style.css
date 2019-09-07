@@ -38,6 +38,12 @@ input, button {
   -moz-transition: 0.3s;
 }
 
+.main-div a {
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
 .main-div input:focus {
   border: 1px solid #777;
 }

@@ -17,12 +17,20 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <div id="signUp_div" class="main-div">
+      <h3>Sign Up</h3>
+      <input type="email" placeholder="Email..." id="email_field_sign" />
+      <input type="password" placeholder="Password..." id="password_field_sign" />
+      <button onclick="signUp()">SignUp</button>
+      <a onclick="SwitchToLogin()">Switch to Login</a>
+    </div>
+
   <div id="login_div" class="main-div">
     <h3>Login</h3>
     <input type="email" placeholder="Email..." id="email_field" />
     <input type="password" placeholder="Password..." id="password_field" />
-
     <button onclick="login()">Login to Account</button>
+    <a onclick="SwitchToSignUp()">Switch to SignUp</a>
   </div>
 
 
@@ -137,17 +145,7 @@
   <!--Google-->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvA3soyJhcmbZ4Zd457y9O15vkX4QLNI&libraries=places&callback=initMap&callback=initializeAutocomplete"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script>
-    var config = {
-      apiKey: "AIzaSyBG8JeUVPgMdNaRV7POSY931fvbnj1KrKk",
-      authDomain: "uwenergyhacks-e273a.firebaseapp.com",
-      databaseURL: "https://uwenergyhacks-e273a.firebaseio.com/",
-      projectId: "uwenergyhacks-e273a",
-      storageBucket: "uwenergyhacks-e273a.appspot.com",
-      messagingSenderId: "275549625427"
-    };
-    firebase.initializeApp(config);
-  </script>
+  <script src="firebase.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
